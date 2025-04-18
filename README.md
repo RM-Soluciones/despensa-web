@@ -8,3 +8,4 @@ Tecnologías: **Next.js 14**, **TypeScript**, **Supabase**, **Tailwind CSS**, *
 ```bash
 pnpm install
 pnpm dev
+![CI](https://github.com/RMsoluciones/despensa-web/actions/workflows/ci.yml/badge.svg)
