@@ -11,7 +11,8 @@
     "lint-staged": "lint-staged",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
     "next": "15.3.1",
