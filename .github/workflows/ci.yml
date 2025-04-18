@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]   # cámbialo a master si mantienes ese nombre
   pull_request:
 
 jobs:
@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # pnpm + Node 20 + caching
       - uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -25,4 +24,4 @@ jobs:
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm test --if-present
-      - run: pnpm build      # Next.js build artefact
+      - run: pnpm build
